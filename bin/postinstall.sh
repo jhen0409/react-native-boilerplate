@@ -3,4 +3,4 @@
 cd babel-preset-rn
 npm install
 cd ..
-npm link babel-preset-rn
+npm link ./babel-preset-rn
