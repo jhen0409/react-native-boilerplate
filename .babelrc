@@ -1,0 +1,8 @@
+{
+  "retainLines": true,
+  "compact": true,
+  "comments": false,
+  "presets": [ "rn" ],
+  "plugins": [],
+  "sourceMaps": false
+}
