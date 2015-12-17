@@ -2,9 +2,9 @@
   "name": "RNBoilerplate",
   "version": "0.0.1",
   "scripts": {
-    "start": "react-native start",
+    "start": "./node_modules/react-native-cli/index.js start",
     "ios-open": "open /Applications/Xcode.app ios/*.xcodeproj",
-    "android": "react-native run-android",
+    "android": "./node_modules/react-native-cli/index.js run-android",
     "lint": "eslint src test",
     "test": "mocha --recursive --compilers js:babel-core/register -r babel-polyfill -r test/setup",
     "test-watch": "npm run test -- --watch",
