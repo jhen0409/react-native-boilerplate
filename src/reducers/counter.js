@@ -1,12 +1,19 @@
+import Immutable from 'immutable';
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../actions/counter';
 
-export default function counter(state = 0, action) {
-  switch (action.type) {
-  case INCREMENT_COUNTER:
-    return state + 1;
-  case DECREMENT_COUNTER:
-    return state - 1;
-  default:
-    return state;
+const initialState = Immutable.Map({ counter: 0 });
+
+const actionsMap = {
+  [INCREMENT_COUNTER]: (state, /*action*/) => {
+    return state.update('counter', n => n + 1);
+  },
+  [DECREMENT_COUNTER]: (state, /*action*/) => {
+    return state.update('counter', n => n - 1);
   }
-}
+};
+
+export default (state = initialState, action) => {
+  const reduceFn = actionsMap[action.type];
+  if (!reduceFn) return state;
+  return reduceFn(state, action);
+};

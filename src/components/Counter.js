@@ -1,3 +1,4 @@
+import Immutable from 'immutable';
 import React, {
   Component,
   PropTypes,
@@ -14,14 +15,14 @@ export default class Counter extends Component {
     incrementIfOdd: PropTypes.func.isRequired,
     incrementAsync: PropTypes.func.isRequired,
     decrement: PropTypes.func.isRequired,
-    counter: PropTypes.number.isRequired
+    counter: PropTypes.instanceOf(Immutable.Map).isRequired
   };
 
   render() {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props;
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Clicked: {counter} times</Text>
+        <Text style={styles.text}>Clicked: {counter.get('counter')} times</Text>
         <TouchableHighlight onPress={increment}>
           <Text style={styles.text}>+</Text>
         </TouchableHighlight>
