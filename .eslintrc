@@ -2,7 +2,8 @@
   "extends": "airbnb",
   "globals": {
     "__DEV__": true,
-    "platform": true
+    "platform": true,
+    "Immutable": true
   },
   "env": {
     "browser": true,

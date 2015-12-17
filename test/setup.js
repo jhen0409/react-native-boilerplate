@@ -1,3 +1,2 @@
-import fetch from 'node-fetch';
-
-global.fetch = fetch;
+global.fetch = require('node-fetch');
+global.Immutable = require('immutable');

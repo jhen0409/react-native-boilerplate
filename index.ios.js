@@ -1,2 +1,3 @@
+global.Immutable = require('immutable');
 global.platform = 'ios';
-import './src';
+require('./src');

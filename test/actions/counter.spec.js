@@ -3,7 +3,6 @@ import { expect } from 'chai';
 import * as actions from '../../src/actions/counter';
 
 describe('actions', () => {
-
   it('increment should create increment action', () => {
     expect(actions.increment()).to.eql({ type: actions.INCREMENT_COUNTER });
   });

@@ -1,4 +1,3 @@
-import Immutable from 'immutable';
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../actions/counter';
 
 const initialState = Immutable.Map({ counter: 0 });
