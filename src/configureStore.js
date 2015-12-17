@@ -12,4 +12,4 @@ const finalCreateStore = applyMiddleware(...middlewares)(createStore);
 
 export default function configureStore(initialState) {
   return finalCreateStore(reducer, initialState);
-};
+}

@@ -3,7 +3,7 @@ import { connect } from 'react-redux/native';
 import Counter from '../components/Counter';
 import * as CounterActions from '../actions/counter';
 
-export default 
+export default
   connect(
     state => ({
       counter: state.counter

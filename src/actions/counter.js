@@ -8,13 +8,13 @@ export function increment() {
   return {
     type: INCREMENT_COUNTER
   };
-};
+}
 
 export function decrement() {
   return {
     type: DECREMENT_COUNTER
   };
-};
+}
 
 export function incrementIfOdd() {
   return (dispatch, getState) => {
@@ -26,13 +26,12 @@ export function incrementIfOdd() {
 
     dispatch(increment());
   };
-};
+}
 
-export function incrementAsync(delay) {
-  delay = delay || 1000;
+export function incrementAsync(delay = 1000) {
   return dispatch => {
     setTimeout(() => {
       dispatch(increment());
     }, delay);
   };
-};
+}
