@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "start": "react-native start",
+    "ios-open": "open /Applications/Xcode.app ios/RNBoilerplate.xcodeproj",
+    "android": "react-native run-android",
     "lint": "eslint src test",
     "test": "mocha --recursive --compilers js:babel-core/register",
     "test-watch": "npm run test -- --watch",
