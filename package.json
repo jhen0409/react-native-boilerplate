@@ -9,7 +9,7 @@
     "test": "mocha --recursive --compilers js:babel-core/register -r babel-polyfill",
     "test-watch": "npm run test -- --watch",
     "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive",
-    "postinstall": "bin/postinstall.sh"
+    "postinstall": "./postinstall.sh"
   },
   "dependencies": {
     "immutable": "^3.7.6",
