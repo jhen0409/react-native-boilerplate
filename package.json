@@ -3,16 +3,16 @@
   "version": "0.0.1",
   "scripts": {
     "start": "react-native start",
-    "ios-open": "open /Applications/Xcode.app ios/RNBoilerplate.xcodeproj",
+    "ios-open": "open /Applications/Xcode.app ios/*.xcodeproj",
     "android": "react-native run-android",
     "lint": "eslint src test",
-    "test": "mocha --recursive --compilers js:babel-core/register",
+    "test": "mocha --recursive --compilers js:babel-core/register -r babel-polyfill",
     "test-watch": "npm run test -- --watch",
+    "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive",
     "postinstall": "bin/postinstall.sh"
   },
   "dependencies": {
     "immutable": "^3.7.6",
-    "keymirror": "^0.1.1",
     "lodash": "^3.10.1",
     "react-native": "~0.16.0",
     "react-redux": "^3.1.2",
@@ -20,6 +20,7 @@
     "redux-thunk": "^1.0.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.3.17",
     "babel-core": "^6.3.17",
     "babel-eslint": "^5.0.0-beta6",
     "babel-polyfill": "^6.3.14",
@@ -28,7 +29,7 @@
     "eslint-config-airbnb": "^0.1.0",
     "eslint-plugin-react": "^3.11.3",
     "fbjs-scripts": "^0.5.0",
-    "istanbul": "^0.4.1",
+    "isparta": "^4.0.0",
     "mocha": "^2.3.4",
     "proxyquire": "^1.7.3",
     "react": "^0.14.3",
