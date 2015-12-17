@@ -1,47 +1,18 @@
-import React from 'react-native';
-const {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} = React;
+import React, { Component, AppRegistry } from 'react-native';
+import { Provider } from 'react-redux/native';
+import App from './containers/App';
+import configureStore from './configureStore';
 
-class RNBoilerplate extends React.Component {
+const store = configureStore();
 
+class RNBoilerplate extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.{platform}.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+      <Provider store={store}>
+        {() => <App />}
+      </Provider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  }
-});
 
 AppRegistry.registerComponent('RNBoilerplate', () => RNBoilerplate);
