@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "immutable": "^3.7.6",
-    "key-mirror": "^1.0.1",
+    "keymirror": "^0.1.1",
     "lodash": "^3.10.1",
     "react-native": "~0.16.0",
     "react-redux": "^3.1.2",
@@ -34,9 +34,12 @@
     "react": "^0.14.3",
     "react-addons-test-utils": "^0.14.3",
     "react-native-cli": "^0.1.7",
+    "redux-immutable-state-invariant": "^1.2.0",
+    "redux-logger": "^2.3.1",
+    "rnpm": "^1.3.4",
     "sinon": "^1.17.2"
   },
   "devEngines": {
-    "node": ">= 4.x"
+    "node": ">= 4.1"
   }
 }
