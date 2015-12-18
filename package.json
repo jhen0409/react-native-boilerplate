@@ -25,7 +25,7 @@
     "babel-core": "^6.3.17",
     "babel-eslint": "^5.0.0-beta6",
     "babel-polyfill": "^6.3.14",
-    "babel-preset-rn": "file:babel-preset-rn",
+    "babel-preset-rn": "~0.16.0",
     "chai": "^3.4.1",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^0.1.0",
