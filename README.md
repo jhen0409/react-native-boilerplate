@@ -1,5 +1,7 @@
 # React Native Boilerplate
 
+[![Build Status](https://travis-ci.org/jhen0409/react-native-boilerplate.svg)](https://travis-ci.org/jhen0409/react-native-boilerplate)
+
 The React Native, Redux boilerplate for personal usage.
 
 ## Install
@@ -26,7 +28,7 @@ npm run ios-open
 
 #### Android
 
-Open Android emulator (recommented [Genymotion](www.genymotion.com)) and run command:
+Open Android emulator (recommented [Genymotion](https://www.genymotion.com)) and run command:
 
 ```bash
 npm run android
