@@ -2,6 +2,7 @@ import sinon from 'sinon';
 import { expect } from 'chai';
 import * as actions from '../../src/actions/counter';
 
+/* eslint no-unused-expressions: 0 */
 describe('actions', () => {
   it('increment should create increment action', () => {
     expect(actions.increment()).to.eql({ type: actions.INCREMENT_COUNTER });
@@ -15,7 +16,7 @@ describe('actions', () => {
     const fn = actions.incrementIfOdd();
     expect(fn).to.be.a('function');
     const dispatch = sinon.spy();
-    const getState = () => ({ counter: 1 });
+    const getState = () => ({ counter: Immutable.Map({ counter: 1 }) });
     fn(dispatch, getState);
     expect(dispatch.calledWith({ type: actions.INCREMENT_COUNTER })).to.equal(true);
   });
@@ -23,7 +24,7 @@ describe('actions', () => {
   it('incrementIfOdd shouldnt create increment action if counter is even', () => {
     const fn = actions.incrementIfOdd();
     const dispatch = sinon.spy();
-    const getState = () => ({ counter: 2 });
+    const getState = () => ({ counter: Immutable.Map({ counter: 2 }) });
     fn(dispatch, getState);
     expect(dispatch.callCount).to.equal(0);
   });
@@ -35,7 +36,7 @@ describe('actions', () => {
     const dispatch = sinon.spy();
     fn(dispatch);
     setTimeout(() => {
-      expect(dispatch.calledWith({ type: actions.INCREMENT_COUNTER })).to.equal(true);
+      expect(dispatch.calledWith({ type: actions.INCREMENT_COUNTER })).to.be.true;
       done();
     }, 5);
   });
