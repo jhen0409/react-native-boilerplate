@@ -21,7 +21,9 @@ const props = {
   incrementAsync: sinon.spy()
 };
 
-describeWithDOM('components <Counter />', () => {
+describeWithDOM('components <Counter />', function() {
+  this.timeout(5000);
+
   let Counter;
   before(() => {
     mockery.enable({
