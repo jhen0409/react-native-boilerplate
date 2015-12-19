@@ -6,9 +6,6 @@ import { describeWithDOM, shallow } from 'enzyme';
 
 const React = getRNMocks();
 const {
-  Component,
-  PropTypes,
-  StyleSheet,
   Text,
   View,
   TouchableHighlight
@@ -21,6 +18,7 @@ const props = {
   incrementAsync: sinon.spy()
 };
 
+/* eslint no-unused-expressions: 0 */
 describeWithDOM('components <Counter />', function() {
   this.timeout(5000);
 

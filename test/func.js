@@ -1,7 +1,7 @@
 import React, * as rnw from 'react-native-web';
 
 export function getRNMocks() {
-  const ReactMocks = { 
+  const ReactMocks = {
     ...React,
     ...rnw,
     TouchableHighlight: rnw.Touchable
