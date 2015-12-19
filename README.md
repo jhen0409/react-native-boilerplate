@@ -1,6 +1,6 @@
 # React Native Boilerplate
 
-The `react-native` boilerplate for personal usage.
+The React Native, Redux boilerplate for personal usage.
 
 ## Install
 
@@ -18,7 +18,7 @@ You can edit `postinstall.sh` to use `rnpm` link react-native iOS/Android module
 
 #### iOS
 
-Open `ios/RNboilerplate.xcodeproj` file with XCode:
+Open `ios/RNBoilerplate.xcodeproj` file with XCode:
 
 ```bash
 npm run ios-open
@@ -26,15 +26,11 @@ npm run ios-open
 
 #### Android
 
-Open Android emulator (recommented [www.genymotion.com](Genymotion)) and run command:
+Open Android emulator (recommented [Genymotion](www.genymotion.com)) and run command:
 
 ```bash
 npm run android
 ```
-
-## Why create `babel-preset-rn`?
-
-We running tests with node, we must check JS syntax are consistent with `react-native` runtime, so we referenced [packager .babelrc](https://github.com/facebook/react-native/blob/master/packager/react-packager/.babelrc) and created `babel-preset-rn`.
 
 ## Test
 
@@ -42,7 +38,19 @@ We used `react-native-web` to mock `react-native` most components, and test with
 
 ```bash
 npm test
+# with watch
+npm test-watch
 ```
+
+## Why create `babel-preset-rn`?
+
+We running tests with node, we must check JS syntax are consistent with `react-native` runtime, so we referenced [packager .babelrc](https://github.com/facebook/react-native/blob/master/packager/react-packager/.babelrc) and created [babel-preset-rn](https://github.com/jhen0409/babel-preset-rn).
+
+## Use this to create new project
+
+* Run `npm run newproject` command
+* Type your project name
+* It will be replaced all `RNboilerplate`, `rnboilerplate` words with your project name
 
 ## Credits
 
