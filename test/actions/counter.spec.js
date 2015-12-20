@@ -18,7 +18,7 @@ describe('actions', () => {
     const dispatch = sinon.spy();
     const getState = () => ({ counter: Immutable.Map({ counter: 1 }) });
     fn(dispatch, getState);
-    expect(dispatch.calledWith({ type: actions.INCREMENT_COUNTER })).to.equal(true);
+    expect(dispatch.calledWith({ type: actions.INCREMENT_COUNTER })).to.be.true;
   });
 
   it('incrementIfOdd shouldnt create increment action if counter is even', () => {
