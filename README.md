@@ -1,6 +1,4 @@
-# React Native Boilerplate
-
-[![Build Status](https://travis-ci.org/jhen0409/react-native-boilerplate.svg)](https://travis-ci.org/jhen0409/react-native-boilerplate)
+# React Native Boilerplate [![Build Status](https://travis-ci.org/jhen0409/react-native-boilerplate.svg)](https://travis-ci.org/jhen0409/react-native-boilerplate)
 
 The React Native, Redux boilerplate for personal usage.
 

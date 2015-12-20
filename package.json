@@ -1,6 +1,6 @@
 {
   "name": "RNBoilerplate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "start": "./node_modules/react-native-cli/index.js start",
     "bundle-ios": "./node_modules/react-native-cli/index.js bundle --platform ios --dev false --entry-file index.ios.js --bundle-output ios/RNBoilerplate/index.ios.bundle --assets-dest ios/RNBoilerplate/Assets.xcassets --minify",
