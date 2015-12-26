@@ -7,6 +7,7 @@ The React Native, Redux boilerplate for personal usage.
 #### npm dependencies
 
 ```bash
+npm install -g react-native-cli
 npm install
 ```
 
