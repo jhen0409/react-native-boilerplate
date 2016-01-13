@@ -9,8 +9,8 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 #### npm dependencies
 
 ```bash
-npm install -g react-native-cli
-npm install
+$ npm install -g react-native-cli
+$ npm install
 ```
 
 #### rnpm link modules
@@ -19,12 +19,21 @@ You can edit `postinstall.sh` to use `rnpm` link react-native iOS/Android module
 
 ## Development
 
+#### Start local server
+
+```bash
+# Start remote-redux-devtools local server
+$ npm run remotedev
+# on another terminal tab
+$ react-native start
+```
+
 #### iOS
 
 Open `ios/RNBoilerplate.xcodeproj` file with XCode:
 
 ```bash
-npm run ios-open
+$ npm run ios-open
 ```
 
 #### Android
@@ -32,7 +41,7 @@ npm run ios-open
 Open Android emulator (recommented [Genymotion](https://www.genymotion.com)) and run command:
 
 ```bash
-npm run android
+$ npm run android
 ```
 
 ## Test
@@ -40,9 +49,9 @@ npm run android
 We used `react-native-web` to mock `react-native` most components, and test with `mocha`, `enzyme`.
 
 ```bash
-npm test
+$ npm test
 # with watch
-npm test-watch
+$ npm test-watch
 ```
 
 ## Why create `babel-preset-rn`?

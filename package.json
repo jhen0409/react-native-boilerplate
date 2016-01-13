@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "debugger-replace": "remotedev-debugger-replace --hostname localhost --port 5678",
-    "start-remotedev": "npm run debugger-replace && remotedev --hostname localhost --port 5678",
+    "remotedev": "npm run debugger-replace && remotedev --hostname localhost --port 5678",
     "start": "./node_modules/react-native-cli/index.js start",
     "bundle-ios": "./node_modules/react-native-cli/index.js bundle --platform ios --dev false --entry-file index.ios.js --bundle-output ios/RNBoilerplate/index.ios.bundle --assets-dest ios/RNBoilerplate/Assets.xcassets --minify",
     "bundle-android": "./node_modules/react-native-cli/index.js bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ --minify",
