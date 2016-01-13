@@ -10,10 +10,14 @@ if (typeof __DEV__ !== 'undefined' && __DEV__) {
 
 let finalCreateStore;
 if (typeof __DEV__ !== 'undefined' && __DEV__) {
-  const devTools = require('remote-redux-devtools').default;
+  const devTools = require('remote-redux-devtools');
   finalCreateStore = compose(
     applyMiddleware(...middlewares),
-    devTools()
+    devTools({
+      hostname: 'localhost',
+      port: 5678,
+      autoReconnect: true
+    })
   )(createStore);
 } else {
   finalCreateStore = applyMiddleware(...middlewares)(createStore);
