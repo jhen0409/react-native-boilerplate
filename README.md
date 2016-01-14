@@ -9,7 +9,6 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 #### npm dependencies
 
 ```bash
-$ npm install -g react-native-cli
 $ npm install
 ```
 
@@ -25,7 +24,7 @@ You can edit `postinstall.sh` to use `rnpm` link react-native iOS/Android module
 # Start remote-redux-devtools local server
 $ npm run remotedev
 # on another terminal tab
-$ react-native start
+$ npm start
 ```
 
 #### iOS

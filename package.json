@@ -4,7 +4,7 @@
   "scripts": {
     "debugger-replace": "remotedev-debugger-replace --hostname localhost --port 5678",
     "remotedev": "npm run debugger-replace && remotedev --hostname localhost --port 5678",
-    "start": "./node_modules/react-native-cli/index.js start",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
     "bundle-ios": "./node_modules/react-native-cli/index.js bundle --platform ios --dev false --entry-file index.ios.js --bundle-output ios/RNBoilerplate/index.ios.bundle --assets-dest ios/RNBoilerplate/Assets.xcassets --minify",
     "bundle-android": "./node_modules/react-native-cli/index.js bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ --minify",
     "bundle-all": "npm run bundle-ios && npm run bundle-android",
@@ -46,7 +46,6 @@
     "react": "^0.14.3",
     "react-addons-test-utils": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-native-cli": "^0.1.7",
     "react-native-web": "0.0.10",
     "remote-redux-devtools": "0.0.6",
     "remote-redux-devtools-on-debugger": "^0.1.0",
