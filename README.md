@@ -54,10 +54,6 @@ $ npm test
 $ npm test-watch
 ```
 
-## Why create `babel-preset-rn`?
-
-We running tests with node, we must check JS syntax are consistent with `react-native` runtime, so we referenced [packager .babelrc](https://github.com/facebook/react-native/blob/master/packager/react-packager/.babelrc) and created [babel-preset-rn](https://github.com/jhen0409/babel-preset-rn).
-
 ## Use this to create new project
 
 * Run `npm run newproject` command

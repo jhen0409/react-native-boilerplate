@@ -30,7 +30,7 @@
     "babel-core": "^6.3.17",
     "babel-eslint": "^5.0.0-beta6",
     "babel-polyfill": "^6.3.14",
-    "babel-preset-rn": "~0.16.0",
+    "babel-preset-react-native": "^1.0.0",
     "chai": "^3.4.1",
     "enzyme": "^1.2.0",
     "eslint": "^1.10.3",

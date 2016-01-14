@@ -1,7 +1,3 @@
 {
-  "retainLines": true,
-  "compact": true,
-  "comments": false,
-  "presets": [ "rn" ],
-  "sourceMaps": false
+  "presets": [ "react-native" ]
 }
