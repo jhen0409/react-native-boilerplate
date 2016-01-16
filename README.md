@@ -49,8 +49,6 @@ We used `react-native-web` to mock `react-native` most components, and test with
 
 ```bash
 $ npm test
-# with watch
-$ npm test-watch
 ```
 
 ## Use this to create new project
