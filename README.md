@@ -2,11 +2,9 @@
 
 The React Native, Redux boilerplate for personal usage.
 
-## Install
+## Installation
 
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
-
-#### npm dependencies
 
 ```bash
 $ npm install -g react-native-cli rnpm

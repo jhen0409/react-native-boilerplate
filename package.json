@@ -13,7 +13,7 @@
     "lint": "eslint src test",
     "test": "mocha --recursive --compilers js:babel-core/register -r babel-polyfill -r test/setup",
     "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive -r test/setup",
-    "postinstall": "./postinstall.sh",
+    "postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
     "newproject": "./newproject.sh"
   },
   "dependencies": {
