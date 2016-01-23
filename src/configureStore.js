@@ -10,9 +10,9 @@ if (typeof __DEV__ !== 'undefined' && __DEV__) {
   finalCreateStore = compose(
     applyMiddleware(...middlewares),
     devTools({
+      name: 'Counter',
       hostname: 'localhost',
-      port: 5678,
-      autoReconnect: true
+      port: 5678
     })
   )(createStore);
 } else {
