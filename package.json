@@ -19,8 +19,8 @@
   "dependencies": {
     "immutable": "^3.7.6",
     "lodash": "^3.10.1",
-    "react-native": "^0.17.0",
-    "react-redux": "^3.1.2",
+    "react-native": "^0.18.1",
+    "react-redux": "^4.0.6",
     "redux": "^3.0.5",
     "redux-thunk": "^1.0.2"
   },
@@ -53,6 +53,7 @@
     "sinon": "^1.17.2"
   },
   "devEngines": {
-    "node": ">= 4.1"
+    "node": ">= 4.1",
+    "npm": ">= 3.x"
   }
 }

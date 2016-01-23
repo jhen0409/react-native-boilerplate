@@ -9,6 +9,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 #### npm dependencies
 
 ```bash
+$ npm install -g react-native-cli
 $ npm install
 ```
 
