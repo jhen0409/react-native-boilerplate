@@ -11,7 +11,7 @@ const {
   TouchableHighlight
 } = React;
 const props = {
-  counter: Immutable.Map({ counter: 1}),
+  counter: Immutable.Map({ counter: 1 }),
   increment: sinon.spy(),
   decrement: sinon.spy(),
   incrementIfOdd: sinon.spy(),
@@ -19,7 +19,7 @@ const props = {
 };
 
 /* eslint no-unused-expressions: 0 */
-describeWithDOM('components <Counter />', function() {
+describeWithDOM('components <Counter />', function () {
   this.timeout(5000);
 
   let Counter;
@@ -42,15 +42,15 @@ describeWithDOM('components <Counter />', function() {
     expect(wrapper.find(View)).to.have.length(1);
     const view = wrapper.find(View);
     expect(view.find(Text)).to.have.length(5);
-    expect(view.find(Text).node.props.children).to.eql([ 'Clicked: ', 1, ' times' ]);
+    expect(view.find(Text).node.props.children).to.eql(['Clicked: ', 1, ' times']);
     const touchs = view.find(TouchableHighlight);
     expect(touchs).to.have.length(4);
-    [ '+', '-', 'Increment if odd', 'Increment async' ].forEach((text, i) => {
+    ['+', '-', 'Increment if odd', 'Increment async'].forEach((text, i) => {
       expect(touchs.at(i).find(Text).node.props.children).to.equal(text);
     });
   });
 
-  [ 'increment', 'decrement', 'incrementIfOdd', 'incrementAsync' ]
+  ['increment', 'decrement', 'incrementIfOdd', 'incrementAsync']
     .forEach((func, i) => {
       it(`should call ${func} with TouchableHighlight on press`, () => {
         const wrapper = shallow(<Counter {...props} />);
