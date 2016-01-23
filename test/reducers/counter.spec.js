@@ -1,7 +1,6 @@
 import Immutable from 'immutable';
 import { expect } from 'chai';
 import counter from '../../src/reducers/counter';
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../../src/actions/counter';
 
 describe('reducers', () => {
   describe('counter', () => {
@@ -9,15 +8,15 @@ describe('reducers', () => {
       expect(counter(undefined, {}).get('counter')).to.equal(0);
     });
 
-    it('should handle INCREMENT_COUNTER', () => {
+    it('should handle increment', () => {
       expect(
-        counter(Immutable.Map({ counter: 1}), { type: INCREMENT_COUNTER }).get('counter')
+        counter(Immutable.Map({ counter: 1 }), { type: 'increment' }).get('counter')
       ).to.equal(2);
     });
 
-    it('should handle DECREMENT_COUNTER', () => {
+    it('should handle decrement', () => {
       expect(
-        counter(Immutable.Map({ counter: 1}), { type: DECREMENT_COUNTER }).get('counter')
+        counter(Immutable.Map({ counter: 1 }), { type: 'decrement' }).get('counter')
       ).to.equal(0);
     });
 

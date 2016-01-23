@@ -1,12 +1,10 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../actions/counter';
-
 const initialState = Immutable.Map({ counter: 0 });
 
 const actionsMap = {
-  [INCREMENT_COUNTER]: (state, /*action*/) => {
+  increment(state/*, action*/) {
     return state.update('counter', n => n + 1);
   },
-  [DECREMENT_COUNTER]: (state, /*action*/) => {
+  decrement(state/*, action*/) {
     return state.update('counter', n => n - 1);
   }
 };

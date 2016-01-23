@@ -5,11 +5,11 @@ import * as actions from '../../src/actions/counter';
 /* eslint no-unused-expressions: 0 */
 describe('actions', () => {
   it('increment should create increment action', () => {
-    expect(actions.increment()).to.eql({ type: actions.INCREMENT_COUNTER });
+    expect(actions.increment()).to.eql({ type: 'increment' });
   });
 
   it('decrement should create decrement action', () => {
-    expect(actions.decrement()).to.eql({ type: actions.DECREMENT_COUNTER });
+    expect(actions.decrement()).to.eql({ type: 'decrement' });
   });
 
   it('incrementIfOdd should create increment action', () => {
@@ -18,7 +18,7 @@ describe('actions', () => {
     const dispatch = sinon.spy();
     const getState = () => ({ counter: Immutable.Map({ counter: 1 }) });
     fn(dispatch, getState);
-    expect(dispatch.calledWith({ type: actions.INCREMENT_COUNTER })).to.be.true;
+    expect(dispatch.calledWith({ type: 'increment' })).to.be.true;
   });
 
   it('incrementIfOdd shouldnt create increment action if counter is even', () => {
@@ -36,7 +36,7 @@ describe('actions', () => {
     const dispatch = sinon.spy();
     fn(dispatch);
     setTimeout(() => {
-      expect(dispatch.calledWith({ type: actions.INCREMENT_COUNTER })).to.be.true;
+      expect(dispatch.calledWith({ type: 'increment' })).to.be.true;
       done();
     }, 5);
   });
