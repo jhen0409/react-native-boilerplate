@@ -9,13 +9,9 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 #### npm dependencies
 
 ```bash
-$ npm install -g react-native-cli
+$ npm install -g react-native-cli rnpm
 $ npm install
 ```
-
-#### rnpm link modules
-
-You can edit `postinstall.sh` to use `rnpm` link react-native iOS/Android modules.
 
 ## Development
 
