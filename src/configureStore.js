@@ -1,3 +1,4 @@
+import { Platform } from 'react-native';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import reducer from './reducers';
@@ -10,7 +11,7 @@ if (typeof __DEV__ !== 'undefined' && __DEV__) {
   finalCreateStore = compose(
     applyMiddleware(...middlewares),
     devTools({
-      name: 'Counter',
+      name: Platform.OS,
       hostname: 'localhost',
       port: 5678
     })
