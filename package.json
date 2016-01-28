@@ -46,9 +46,9 @@
     "react-addons-test-utils": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-native-web": "0.0.13",
-    "remote-redux-devtools": "0.0.10",
-    "remote-redux-devtools-on-debugger": "^0.2.0",
-    "remotedev-server": "0.0.1",
+    "remote-redux-devtools": "0.1.0",
+    "remote-redux-devtools-on-debugger": "^0.2.1",
+    "remotedev-server": "0.0.2",
     "replace": "^0.3.0",
     "sinon": "^1.17.2"
   },
