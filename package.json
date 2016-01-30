@@ -20,9 +20,9 @@
     "immutable": "^3.7.6",
     "lodash": "^4.0.0",
     "react-native": "^0.18.1",
-    "react-redux": "^4.0.6",
-    "redux": "^3.0.5",
-    "redux-thunk": "^1.0.2"
+    "react-redux": "^4.1.2",
+    "redux": "^3.1.5",
+    "redux-thunk": "^1.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
@@ -46,7 +46,7 @@
     "react-addons-test-utils": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-native-web": "0.0.13",
-    "remote-redux-devtools": "0.1.0",
+    "remote-redux-devtools": "^0.1.0",
     "remote-redux-devtools-on-debugger": "^0.2.1",
     "remotedev-server": "0.0.2",
     "replace": "^0.3.0",
