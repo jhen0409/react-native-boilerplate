@@ -24,10 +24,16 @@ $ npm start
 
 #### iOS
 
-Open `ios/RNBoilerplate.xcodeproj` file with XCode:
+* Open `ios/RNBoilerplate.xcodeproj` file with XCode:
+
+```bash 
+$ npm run ios-open
+```
+
+* Run command to open iOS simulator and run app:
 
 ```bash
-$ npm run ios-open
+$ npm run ios
 ```
 
 #### Android (5.0+)
