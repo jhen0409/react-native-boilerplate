@@ -24,16 +24,16 @@ $ npm start
 
 #### iOS
 
-* Open `ios/RNBoilerplate.xcodeproj` file with XCode:
-
-```bash 
-$ npm run ios-open
-```
-
-* Run command to open iOS simulator and run app:
+Run command to open iOS simulator and run app:
 
 ```bash
 $ npm run ios
+```
+
+Or open `ios/RNBoilerplate.xcodeproj` file with XCode:
+
+```bash
+$ npm run ios-open
 ```
 
 #### Android (5.0+)
@@ -42,7 +42,7 @@ Open Android emulator (recommented [Genymotion](https://www.genymotion.com)) and
 
 ```bash
 $ adb reverse tcp:8081 tcp:8081  # react-native local server
-$ adb reserve tcp:5678 tcp:5678  # remotedev local server
+$ adb reverse tcp:5678 tcp:5678  # remotedev local server
 $ npm run android
 ```
 
