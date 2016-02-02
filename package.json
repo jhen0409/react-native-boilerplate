@@ -14,7 +14,7 @@
     "lint": "eslint src test",
     "test": "mocha --recursive --compilers js:babel-core/register -r babel-polyfill -r test/setup",
     "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive -r test/setup",
-    "postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
+    "postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json && rnpm link",
     "newproject": "./newproject.sh"
   },
   "dependencies": {
@@ -50,6 +50,7 @@
     "remote-redux-devtools": "^0.1.0",
     "remote-redux-devtools-on-debugger": "^0.2.1",
     "remotedev-server": "0.0.2",
+    "rnpm": "^1.4.1",
     "replace": "^0.3.0",
     "sinon": "^1.17.2"
   },
