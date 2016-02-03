@@ -1,6 +1,6 @@
 {
   "name": "RNBoilerplate",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scripts": {
     "debugger-replace": "remotedev-debugger-replace --hostname localhost --port 5678",
     "remotedev": "npm run debugger-replace && remotedev --hostname localhost --port 5678",
