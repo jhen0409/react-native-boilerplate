@@ -17,7 +17,7 @@ if (typeof __DEV__ !== 'undefined' && __DEV__) {
     })
   );
 } else {
-  enhancer = applyMiddleware(...middlewares)
+  enhancer = applyMiddleware(...middlewares);
 }
 
 export default function configureStore(initialState) {
