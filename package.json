@@ -2,8 +2,7 @@
   "name": "RNBoilerplate",
   "version": "0.3.0",
   "scripts": {
-    "debugger-replace": "remotedev-debugger-replace --hostname localhost --port 5678",
-    "remotedev": "npm run debugger-replace && remotedev --hostname localhost --port 5678",
+    "remotedev": "remotedev-debugger --hostname localhost --port 5678 --runserver",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "bundle-ios": "node node_modules/react-native/local-cli/cli.js bundle --platform ios --dev false --entry-file index.ios.js --bundle-output ios/RNBoilerplate/index.ios.bundle --assets-dest ios/RNBoilerplate/Assets.xcassets --minify",
     "bundle-android": "node node_modules/react-native/local-cli/cli.js bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ --minify",
@@ -48,8 +47,7 @@
     "react-dom": "^0.14.3",
     "react-native-web": "0.0.13",
     "remote-redux-devtools": "^0.1.1",
-    "remote-redux-devtools-on-debugger": "^0.2.3",
-    "remotedev-server": "0.0.2",
+    "remote-redux-devtools-on-debugger": "^0.2.4",
     "rnpm": "^1.4.1",
     "replace": "^0.3.0",
     "sinon": "^1.17.2"
