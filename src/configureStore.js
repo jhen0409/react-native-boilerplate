@@ -1,24 +1,25 @@
+import { Platform } from 'react-native';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import reducer from './reducers';
 
 const middlewares = [thunk];
 
-let finalCreateStore;
+let enhancer;
 if (typeof __DEV__ !== 'undefined' && __DEV__) {
   const devTools = require('remote-redux-devtools');
-  finalCreateStore = compose(
+  enhancer = compose(
     applyMiddleware(...middlewares),
     devTools({
-      name: 'Counter',
+      name: Platform.OS,
       hostname: 'localhost',
       port: 5678
     })
-  )(createStore);
+  );
 } else {
-  finalCreateStore = applyMiddleware(...middlewares)(createStore);
+  enhancer = applyMiddleware(...middlewares);
 }
 
 export default function configureStore(initialState) {
-  return finalCreateStore(reducer, initialState);
+  return createStore(reducer, initialState, enhancer);
 }
