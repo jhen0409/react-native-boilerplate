@@ -10,7 +10,8 @@
     "lint": "eslint src test",
     "test": "mocha --recursive --compilers js:babel-core/register -r babel-polyfill -r test/setup",
     "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive -r test/setup",
-    "postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json && rnpm link",
+    "rm-rnw-fbjs": "rm -rf node_modules/react-native-web/node_modules/fbjs",
+    "postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json && rnpm link && npm run rm-rnw-fbjs",
     "newproject": "./newproject.sh"
   },
   "dependencies": {
