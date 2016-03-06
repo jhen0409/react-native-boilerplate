@@ -2,7 +2,7 @@ import sinon from 'sinon';
 import mockery from 'mockery';
 import { expect } from 'chai';
 import { getRNMocks } from '../func.js';
-import { describeWithDOM, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 
 const React = getRNMocks();
 const {
@@ -19,7 +19,7 @@ const props = {
 };
 
 /* eslint no-unused-expressions: 0 */
-describeWithDOM('components <Counter />', function () {
+describe('components <Counter />', function () {
   this.timeout(5000);
 
   let Counter;

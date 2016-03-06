@@ -1,3 +1,7 @@
+import { jsdom } from 'jsdom';
+
 global.fetch = require('node-fetch');
 global.Immutable = require('immutable');
-global.navigator = require('navigator');
+global.document = jsdom('<!doctype html><html><body></body></html>');
+global.window = document.defaultView;
+global.navigator = global.window.navigator;
