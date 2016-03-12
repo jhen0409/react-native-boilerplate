@@ -1,6 +1,6 @@
 {
   "name": "RNBoilerplate",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "scripts": {
     "remotedev": "remotedev-debugger --hostname localhost --port 5678 --runserver",
     "start": "node node_modules/react-native/local-cli/cli.js start",
