@@ -1,15 +1,12 @@
 import sinon from 'sinon';
-import mockery from 'mockery';
 import { expect } from 'chai';
-import { getRNMocks } from '../func.js';
 import { shallow } from 'enzyme';
-
-const React = getRNMocks();
-const {
+import React, {
   Text,
   View,
   TouchableHighlight
-} = React;
+} from 'react-native';
+
 const props = {
   counter: Immutable.Map({ counter: 1 }),
   increment: sinon.spy(),
@@ -24,17 +21,7 @@ describe('components <Counter />', function () {
 
   let Counter;
   before(() => {
-    mockery.enable({
-      warnOnReplace: false,
-      warnOnUnregistered: false,
-      useCleanCache: true
-    });
-    mockery.registerMock('react-native', React);
     Counter = require('../../src/components/Counter').default;
-  });
-
-  after(() => {
-    mockery.disable();
   });
 
   it('should render correctly', () => {
