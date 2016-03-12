@@ -1,18 +1,14 @@
-import React, { Component, AppRegistry } from 'react-native';
+import React, { AppRegistry } from 'react-native';
 import { Provider } from 'react-redux';
 import App from './containers/App';
 import configureStore from './configureStore';
 
 const store = configureStore();
 
-class RNBoilerplate extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
-  }
-}
+const RNBoilerplate = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 
 AppRegistry.registerComponent('RNBoilerplate', () => RNBoilerplate);
