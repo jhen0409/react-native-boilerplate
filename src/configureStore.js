@@ -7,6 +7,9 @@ const middlewares = [thunk];
 
 let enhancer;
 if (__DEV__) {
+  const installDevTools = require("immutable-devtools").default;
+  installDevTools(Immutable);
+
   const devTools = require('remote-redux-devtools');
   enhancer = compose(
     applyMiddleware(...middlewares),
