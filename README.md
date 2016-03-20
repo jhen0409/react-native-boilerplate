@@ -16,9 +16,6 @@ $ npm install
 #### Start local server
 
 ```bash
-# Start remote-redux-devtools local server
-$ npm run remotedev
-# on another terminal tab
 $ npm start
 ```
 
