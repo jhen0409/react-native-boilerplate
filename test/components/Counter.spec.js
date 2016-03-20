@@ -6,6 +6,7 @@ import React, {
   View,
   TouchableHighlight
 } from 'react-native';
+import Counter from '../../src/components/Counter';
 
 const props = {
   counter: Immutable.Map({ counter: 1 }),
@@ -18,11 +19,6 @@ const props = {
 /* eslint no-unused-expressions: 0 */
 describe('components <Counter />', function () {
   this.timeout(5000);
-
-  let Counter;
-  before(() => {
-    Counter = require('../../src/components/Counter').default;
-  });
 
   it('should render correctly', () => {
     const wrapper = shallow(<Counter {...props} />);

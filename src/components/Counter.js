@@ -7,7 +7,28 @@ import React, {
   TouchableHighlight
 } from 'react-native';
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  text: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  }
+});
+
 export default class Counter extends Component {
+  static propTypes = {
+    increment: PropTypes.func.isRequired,
+    incrementIfOdd: PropTypes.func.isRequired,
+    incrementAsync: PropTypes.func.isRequired,
+    decrement: PropTypes.func.isRequired,
+    counter: PropTypes.instanceOf(Immutable.Map).isRequired
+  };
 
   constructor(props) {
     super(props);
@@ -36,25 +57,3 @@ export default class Counter extends Component {
     );
   }
 }
-
-Counter.propTypes = {
-  increment: PropTypes.func.isRequired,
-  incrementIfOdd: PropTypes.func.isRequired,
-  incrementAsync: PropTypes.func.isRequired,
-  decrement: PropTypes.func.isRequired,
-  counter: PropTypes.instanceOf(Immutable.Map).isRequired
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  text: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  }
-});

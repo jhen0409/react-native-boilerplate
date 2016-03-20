@@ -6,7 +6,7 @@ import reducer from './reducers';
 const middlewares = [thunk];
 
 let enhancer;
-if (typeof __DEV__ !== 'undefined' && __DEV__) {
+if (__DEV__) {
   const devTools = require('remote-redux-devtools');
   enhancer = compose(
     applyMiddleware(...middlewares),
