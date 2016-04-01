@@ -1,6 +1,13 @@
 # React Native Boilerplate [![Build Status](https://travis-ci.org/jhen0409/react-native-boilerplate.svg)](https://travis-ci.org/jhen0409/react-native-boilerplate) [![Dependency Status](https://david-dm.org/jhen0409/react-native-boilerplate.svg)](https://david-dm.org/jhen0409/react-native-boilerplate) [![devDependency Status](https://david-dm.org/jhen0409/react-native-boilerplate/dev-status.svg)](https://david-dm.org/jhen0409/react-native-boilerplate#info=devDependencies)
 
-The React Native, Redux boilerplate for personal usage.
+> The React Native, Redux boilerplate for personal usage
+
+## Included
+
+* [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native) v0.22
+* [Redux](https://github.com/reactjs/redux) & [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) & [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger)
+* [Immutable](https://github.com/facebook/immutable-js) & [Immutable DevTools](https://github.com/andrewdavey/immutable-devtools)
+* [Babel](https://github.com/babel/babel) & Plugins: [add-module-exports](https://github.com/59naga/babel-plugin-add-module-exports), [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
 
 ## Installation
 
