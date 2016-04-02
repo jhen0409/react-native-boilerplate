@@ -8,8 +8,7 @@
   },
   "env": {
     "browser": true,
-    "node": true,
-    "mocha": true
+    "node": true
   },
   "rules": {
     "func-names": 0,

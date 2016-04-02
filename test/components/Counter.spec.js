@@ -16,7 +16,6 @@ const props = {
   incrementAsync: sinon.spy()
 };
 
-/* eslint no-unused-expressions: 0 */
 describe('components <Counter />', function () {
   this.timeout(5000);
 

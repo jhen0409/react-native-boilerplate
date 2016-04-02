@@ -2,7 +2,6 @@ import sinon from 'sinon';
 import { expect } from 'chai';
 import * as actions from '../../src/actions/counter';
 
-/* eslint no-unused-expressions: 0 */
 describe('actions', () => {
   it('increment should create increment action', () => {
     expect(actions.increment()).to.eql({ type: 'increment' });
