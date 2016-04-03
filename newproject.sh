@@ -14,7 +14,10 @@ do
   replace 'rnboilerplate' $lc $i -r ;
 done
 
+replace 'RNBoilerplate' $project ios/RNBoilerplate.xcodeproj/xcshareddata/xcschemes/RNBoilerplate.xcscheme -r
+
 mv ios/RNBoilerplate ios/$project
+mv ios/RNBoilerplate.xcodeproj/xcshareddata/xcschemes/RNBoilerplate.xcscheme ios/RNBoilerplate.xcodeproj/xcshareddata/xcschemes/"$project".xcscheme
 mv ios/RNBoilerplate.xcodeproj ios/"$project".xcodeproj
 mv ios/RNBoilerplateTests/RNBoilerplateTests.m ios/RNBoilerplateTests/"$project"Tests.m
 mv ios/RNBoilerplateTests ios/"$project"Tests
