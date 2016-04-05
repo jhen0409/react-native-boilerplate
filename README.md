@@ -54,7 +54,7 @@ __*[Emulator only]*__ If you're still use Android 4.0, it will cannot use `adb r
 
 ## Test
 
-We used `react-native-web` to mock `react-native` most components, and test with `mocha`, `enzyme`.
+We used [react-native-mock](https://github.com/lelandrichardson/react-native-mock), and test with [Mocha](https://github.com/mochajs/mocha), [Enzyme](https://github.com/airbnb/enzyme).
 
 ```bash
 $ npm test
