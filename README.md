@@ -18,6 +18,8 @@ $ npm install -g react-native-cli
 $ npm install
 ```
 
+Also, you can use [generator-rnb](https://github.com/jhen0409/generator-rnb) to create project with this boilerplate.
+
 ## Development
 
 #### Start local server
@@ -59,12 +61,6 @@ We used [react-native-mock](https://github.com/lelandrichardson/react-native-moc
 ```bash
 $ npm test
 ```
-
-## Use this to create new project
-
-* Run `npm run newproject` command
-* Type your project name
-* It will be replaced all `RNboilerplate`, `rnboilerplate` words with your project name
 
 ## Credits
 

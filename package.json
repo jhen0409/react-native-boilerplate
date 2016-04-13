@@ -12,8 +12,7 @@
     "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive -r test/setup",
     "remotedev": "remotedev-debugger --hostname localhost --port 5678 --injectserver",
     "checkversion": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
-    "postinstall": "npm run checkversion && rnpm link && npm run remotedev",
-    "newproject": "./newproject.sh"
+    "postinstall": "npm run checkversion && rnpm link && npm run remotedev"
   },
   "dependencies": {
     "immutable": "^3.7.6",
@@ -47,7 +46,6 @@
     "react-native-mock": "0.0.7",
     "remote-redux-devtools": "^0.1.2",
     "remote-redux-devtools-on-debugger": "^0.4.0",
-    "replace": "^0.3.0",
     "rnpm": "^1.4.1",
     "sinon": "^1.17.2"
   },
