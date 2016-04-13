@@ -1,6 +1,7 @@
 import sinon from 'sinon';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
+import Immutable from 'immutable';
 import React, {
   Text,
   View,

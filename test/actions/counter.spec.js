@@ -1,5 +1,6 @@
 import sinon from 'sinon';
 import { expect } from 'chai';
+import Immutable from 'immutable';
 import * as actions from '../../src/actions/counter';
 
 describe('actions', () => {

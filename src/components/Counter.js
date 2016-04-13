@@ -6,6 +6,7 @@ import React, {
   View,
   TouchableHighlight
 } from 'react-native';
+import Immutable from 'immutable';
 
 const styles = StyleSheet.create({
   container: {

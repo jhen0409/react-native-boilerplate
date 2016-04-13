@@ -1,3 +1,4 @@
+import Immutable from 'immutable';
 import { Platform } from 'react-native';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
