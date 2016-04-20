@@ -35,3 +35,9 @@ npm-debug.log
 coverage
 
 *.bundle
+
+# BUCK
+buck-out/
+\.buckd/
+android/app/libs
+android/keystores/debug.keystore
