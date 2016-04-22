@@ -7,7 +7,7 @@
 * [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native) v0.24
 * [Redux](https://github.com/reactjs/redux) & [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) & [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger)
 * [Immutable](https://github.com/facebook/immutable-js) & [Immutable DevTools](https://github.com/andrewdavey/immutable-devtools)
-* [Babel](https://github.com/babel/babel) & Plugins: [add-module-exports](https://github.com/59naga/babel-plugin-add-module-exports), [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
+* [Babel](https://github.com/babel/babel) & Plugins: [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
 
 ## Installation
 
