@@ -9,23 +9,8 @@
     "node": true
   },
   "rules": {
-    "func-names": 0,
     "comma-dangle": 0,
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/react-in-jsx-scope": 2,
-    "react/prefer-stateless-function": 0,
-    "react/jsx-quotes": 0,
-    "key-spacing": 0,
-    "no-multi-spaces": 0,
-    "id-length": 0,
-    "no-throw-literal": 0,
-    "one-var": 0,
-    "camelcase": 0,
-    "no-console": 0,
     "spaced-comment": 0,
-    "no-sequences": 0,
-    "no-use-before-define": 0,
     "new-cap": [2, { "capIsNewExceptions": ["Map"] }]
   },
   "plugins": ["react"]
