@@ -2,11 +2,8 @@ import sinon from 'sinon';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import Immutable from 'immutable';
-import React, {
-  Text,
-  View,
-  TouchableHighlight
-} from 'react-native';
+import React from 'react';
+import { Text, View, TouchableHighlight } from 'react-native';
 import Counter from '../../src/components/Counter';
 
 const props = {

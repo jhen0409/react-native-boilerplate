@@ -1,4 +1,5 @@
-import React, { AppRegistry } from 'react-native';
+import React from 'react';
+import { AppRegistry } from 'react-native';
 import { Provider } from 'react-redux';
 import App from './containers/App';
 import configureStore from './configureStore';

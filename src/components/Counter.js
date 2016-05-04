@@ -1,11 +1,5 @@
-import React, {
-  Component,
-  PropTypes,
-  StyleSheet,
-  Text,
-  View,
-  TouchableHighlight
-} from 'react-native';
+import React, { Component, PropTypes } from 'react';
+import { StyleSheet, Text, View, TouchableHighlight } from 'react-native';
 import Immutable from 'immutable';
 
 const styles = StyleSheet.create({
