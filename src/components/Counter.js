@@ -3,12 +3,6 @@ import { StyleSheet, Text, View, TouchableHighlight } from 'react-native';
 import Immutable from 'immutable';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
   text: {
     fontSize: 20,
     textAlign: 'center',
@@ -34,7 +28,7 @@ export default class Counter extends Component {
   render() {
     const { increment, incrementIfOdd, decrement, counter } = this.props;
     return (
-      <View style={styles.container}>
+      <View>
         <Text style={styles.text}>Clicked: {counter.get('counter')} times</Text>
         <TouchableHighlight onPress={increment}>
           <Text style={styles.text}>+</Text>
