@@ -13,10 +13,9 @@ export default class Root extends NavigationExperimental.RootContainer {
   }
 
   render() {
-    const navigation = this.props.renderNavigation(
+    return this.props.renderNavigation(
       this.props.navigationState,
       this.handleNavigation
     );
-    return navigation;
   }
 }

@@ -1,22 +1,22 @@
 import React, { Component, PropTypes } from 'react';
 import { NavigationExperimental } from 'react-native';
 import { connect } from 'react-redux';
+
+import Root from './Root';
 import Home from './Home';
 import Counter from './Counter';
-import Root from './Root';
+
 import routeReducer from '../reducers/routes';
 
 const { CardStack } = NavigationExperimental;
 
 @connect(
-  state => ({
-    navigation: state.routes
-  }),
+  state => state,
   dispatch => ({ dispatch })
 )
 export default class App extends Component {
   static propTypes = {
-    navigation: PropTypes.object.isRequired
+    routes: PropTypes.object.isRequired
   };
 
   renderNavigation = (navigationState, onNavigate) => (
@@ -29,19 +29,21 @@ export default class App extends Component {
   );
 
   renderScene = props => {
-    if (props.scene.key === 'scene_home') {
-      return <Home onNavigate={props.onNavigate} />;
-    } else if (props.scene.key === 'scene_counter') {
-      return <Counter onNavigate={props.onNavigate} />;
+    switch (props.scene.key) {
+      case 'scene_home':
+        return <Home onNavigate={props.onNavigate} />;
+      case 'scene_counter':
+        return <Counter onNavigate={props.onNavigate} />;
+      default:
+        return null;
     }
-    return null;
   }
 
   render() {
     return (
       <Root
         reducer={routeReducer}
-        navigationState={this.props.navigation}
+        navigationState={this.props.routes}
         renderNavigation={this.renderNavigation}
       />
     );
