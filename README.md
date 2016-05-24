@@ -2,9 +2,15 @@
 
 > The React Native, Redux boilerplate for personal usage
 
+## Screenshot
+
+![screenshot](https://cloud.githubusercontent.com/assets/3001525/15508320/901e5fe6-2201-11e6-970b-e7c496ab1b16.gif)
+
+> NavigationExperimental, Redux Counter example and Remote Redux DevTools control
+
 ## Included
 
-* [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native) v0.25
+* [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native) v0.26
 * [Redux](https://github.com/reactjs/redux) & [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) & [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger)
 * [Immutable](https://github.com/facebook/immutable-js) & [Immutable DevTools](https://github.com/andrewdavey/immutable-devtools)
 * [Babel](https://github.com/babel/babel) & Plugins: [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
