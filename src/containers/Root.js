@@ -1,13 +1,13 @@
-import { NavigationExperimental } from 'react-native';
+import { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 @connect(
   state => state,
   dispatch => ({ dispatch })
 )
-export default class Root extends NavigationExperimental.RootContainer {
+export default class Root extends Component {
 
-  handleNavigation(action) {
+  handleNavigation = (action) => {
     const { dispatch } = this.props;
     dispatch(action);
   }
