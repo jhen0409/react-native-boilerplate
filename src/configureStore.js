@@ -13,14 +13,16 @@ if (__DEV__) {
   const installDevTools = require('immutable-devtools');
   installDevTools(Immutable);
 
-  const devTools = require('remote-redux-devtools');
+  const reduxRemoteDevTools = require('remote-redux-devtools');
   enhancer = compose(
     applyMiddleware(...middlewares),
-    devTools({
-      name: Platform.OS,
-      hostname: 'localhost',
-      port: 5678
-    })
+    global.reduxNativeDevTools ?
+      global.reduxNativeDevTools() :
+      reduxRemoteDevTools({
+        name: Platform.OS,
+        host: 'localhost',
+        port: 5678
+      }),
   );
 } else {
   enhancer = applyMiddleware(...middlewares);
