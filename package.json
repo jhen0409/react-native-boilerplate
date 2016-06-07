@@ -12,7 +12,7 @@
     "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive -r test/setup",
     "remotedev": "remotedev-debugger --hostname localhost --port 5678 --injectserver",
     "checkversion": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
-    "postinstall": "npm run checkversion && rnpm link && npm run remotedev"
+    "postinstall": "npm run checkversion && rnpm link && npm run remotedev && rndebugger-open"
   },
   "dependencies": {
     "immutable": "^3.7.6",
