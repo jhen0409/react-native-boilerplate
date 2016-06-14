@@ -11,7 +11,7 @@
     "test": "mocha --recursive --compilers js:babel-core/register -r test/setup",
     "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive -r test/setup",
     "remotedev": "remotedev-debugger --hostname localhost --port 5678 --injectserver",
-    "postinstall": "rnpm link && npm run remotedev && rndebugger-open"
+    "postinstall": "node necard-patch.js && rnpm link && npm run remotedev && rndebugger-open"
   },
   "dependencies": {
     "immutable": "^3.7.6",
