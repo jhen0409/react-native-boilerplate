@@ -11,8 +11,7 @@
     "test": "mocha --recursive --compilers js:babel-core/register -r test/setup",
     "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive -r test/setup",
     "remotedev": "remotedev-debugger --hostname localhost --port 5678 --injectserver",
-    "checkversion": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
-    "postinstall": "npm run checkversion && rnpm link && npm run remotedev && rndebugger-open"
+    "postinstall": "rnpm link && npm run remotedev && rndebugger-open"
   },
   "dependencies": {
     "immutable": "^3.7.6",
@@ -37,7 +36,6 @@
     "eslint-plugin-import": "^1.8.0",
     "eslint-plugin-jsx-a11y": "^1.2.1",
     "eslint-plugin-react": "^5.1.1",
-    "fbjs-scripts": "^0.7.0",
     "immutable-devtools": "0.0.7",
     "isparta": "^4.0.0",
     "mocha": "^2.4.5",
@@ -51,9 +49,5 @@
     "remote-redux-devtools-on-debugger": "^0.4.4",
     "rnpm": "^1.4.1",
     "sinon": "^1.17.2"
-  },
-  "devEngines": {
-    "node": ">= 5.x",
-    "npm": ">= 3.x"
   }
 }
