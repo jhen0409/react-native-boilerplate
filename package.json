@@ -7,17 +7,18 @@
     "ios-open": "open ios/*.xcodeproj",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "link": "node node_modules/react-native/local-cli/cli.js link",
     "lint": "eslint src test *.js",
     "test": "mocha --recursive --compilers js:babel-core/register -r test/setup",
     "cover": "babel-node node_modules/.bin/isparta cover _mocha -- --recursive -r test/setup",
     "remotedev": "remotedev-debugger --hostname localhost --port 5678 --injectserver",
-    "postinstall": "node necard-patch.js && rnpm link && npm run remotedev && rndebugger-open"
+    "postinstall": "npm run link && npm run remotedev && rndebugger-open"
   },
   "dependencies": {
     "immutable": "^3.7.6",
     "lodash": "^4.3.0",
     "react": "15.1.0",
-    "react-native": "^0.27.1",
+    "react-native": "^0.28.0",
     "react-redux": "^4.4.0",
     "redux": "^3.3.1",
     "redux-thunk": "^2.0.1"
@@ -47,7 +48,6 @@
     "react-native-mock": "^0.2.3",
     "remote-redux-devtools": "^0.3.1",
     "remote-redux-devtools-on-debugger": "^0.4.4",
-    "rnpm": "^1.4.1",
     "sinon": "^1.17.2"
   }
 }
