@@ -27,12 +27,12 @@ const styles = StyleSheet.create({
 )
 export default class CounterContainer extends Component {
   static propTypes = {
-    onNavigate: PropTypes.func.isRequired
+    navigate: PropTypes.func.isRequired
   };
 
   handleBack = () => {
-    const { onNavigate } = this.props;
-    onNavigate({ type: 'pop' });
+    const { navigate } = this.props;
+    navigate({ type: 'pop' });
   }
 
   render() {

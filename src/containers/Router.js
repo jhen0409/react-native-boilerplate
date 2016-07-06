@@ -2,6 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import { NavigationExperimental } from 'react-native';
 import { connect } from 'react-redux';
 
+import Home from './Home';
+import Counter from './Counter';
+
 const { CardStack } = NavigationExperimental;
 
 @connect(
@@ -10,24 +13,31 @@ const { CardStack } = NavigationExperimental;
 )
 export default class Root extends Component {
   static propTypes = {
-    reducer: PropTypes.func.isRequired,
     routes: PropTypes.object.isRequired,
-    renderScene: PropTypes.func.isRequired,
     dispatch: PropTypes.func.isRequired
   };
 
-  handleNavigation = (action) => {
-    const { dispatch } = this.props;
-    dispatch(action);
+  handleNavigation = action => {
+    this.props.dispatch(action);
+  }
+
+  renderScene = props => {
+    switch (props.scene.key) {
+      case 'scene_home':
+        return <Home navigate={this.handleNavigation} />;
+      case 'scene_counter':
+        return <Counter navigate={this.handleNavigation} />;
+      default:
+        return null;
+    }
   }
 
   render() {
     return (
       <CardStack
         direction="horizontal"
-        onNavigate={this.handleNavigation}
         navigationState={this.props.routes}
-        renderScene={this.props.renderScene}
+        renderScene={this.renderScene}
       />
     );
   }

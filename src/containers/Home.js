@@ -27,12 +27,12 @@ const styles = StyleSheet.create({
 
 export default class Home extends Component {
   static propTypes = {
-    onNavigate: PropTypes.func.isRequired
+    navigate: PropTypes.func.isRequired
   };
 
   toCounter = () => {
-    const { onNavigate } = this.props;
-    onNavigate({
+    const { navigate } = this.props;
+    navigate({
       type: 'push',
       key: 'counter'
     });
