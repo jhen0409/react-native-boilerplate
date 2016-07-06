@@ -44,10 +44,10 @@
     "proxyquire": "^1.7.4",
     "react-addons-test-utils": "15.1.0",
     "react-dom": "15.1.0",
-    "react-native-debugger-open": "^0.2.1",
+    "react-native-debugger-open": "^0.3.0",
     "react-native-mock": "^0.2.3",
     "remote-redux-devtools": "^0.3.1",
-    "remote-redux-devtools-on-debugger": "^0.4.4",
+    "remote-redux-devtools-on-debugger": "^0.5.1",
     "sinon": "^1.17.2"
   }
 }
