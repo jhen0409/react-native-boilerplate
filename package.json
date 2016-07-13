@@ -11,8 +11,12 @@
     "lint": "eslint src test *.js",
     "test": "mocha --recursive --compilers js:babel-core/register -r test/setup",
     "cover": "nyc npm test",
-    "remotedev": "remotedev-debugger --hostname localhost --port 5678 --injectserver",
+    "remotedev": "remotedev-debugger --injectserver",
     "postinstall": "npm run link && npm run remotedev && rndebugger-open"
+  },
+  "remotedev": {
+    "hostname": "localhost",
+    "port": 5678
   },
   "dependencies": {
     "immutable": "^3.7.6",

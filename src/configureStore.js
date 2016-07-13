@@ -20,8 +20,7 @@ if (__DEV__) {
       global.reduxNativeDevTools() :
       reduxRemoteDevTools({
         name: Platform.OS,
-        host: 'localhost',
-        port: 5678
+        ...require('../package.json').remotedev,
       }),
   );
 } else {
