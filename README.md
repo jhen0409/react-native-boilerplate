@@ -10,7 +10,7 @@
 
 ## Included
 
-* [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native) v0.28
+* [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native) v0.29
 * [Redux](https://github.com/reactjs/redux) & [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) & [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger)
 * [Immutable](https://github.com/facebook/immutable-js) & [Immutable DevTools](https://github.com/andrewdavey/immutable-devtools)
 * [Babel](https://github.com/babel/babel) & Plugins: [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
@@ -53,7 +53,7 @@ $ npm run ios-open
 Open Android emulator (recommented [Genymotion](https://www.genymotion.com)) and run command: (Or connect real device via USB)
 
 ```bash
-$ adb reverse tcp:8081 tcp:8081  # react-native local server
+$ adb reverse tcp:8097 tcp:8097  # if you're using react-devtools
 $ adb reverse tcp:5678 tcp:5678  # remotedev local server
 $ npm run android
 ```
