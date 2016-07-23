@@ -21,7 +21,7 @@ if (__DEV__) {
       reduxRemoteDevTools({
         name: Platform.OS,
         ...require('../package.json').remotedev,
-      }),
+      })
   );
 } else {
   enhancer = applyMiddleware(...middlewares);

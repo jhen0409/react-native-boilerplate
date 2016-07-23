@@ -54,11 +54,8 @@ Open Android emulator (recommented [Genymotion](https://www.genymotion.com)) and
 
 ```bash
 $ adb reverse tcp:8097 tcp:8097  # if you're using react-devtools
-$ adb reverse tcp:5678 tcp:5678  # remotedev local server
 $ npm run android
 ```
-
-__*[Emulator only]*__ If you're still use Android 4.0, it will cannot use `adb reverse`, you should use `10.0.2.2` (Genymotion: `10.0.3.2`) instead of `localhost` in [configureStore.js](src/configureStore.js#L15).
 
 ## DevTools
 
