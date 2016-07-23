@@ -50,7 +50,7 @@ $ npm run ios-open
 
 #### Android (5.0+)
 
-Open Android emulator (recommented [Genymotion](https://www.genymotion.com)) and run command: (Or connect real device via USB)
+Open Android emulator (recommended [Genymotion](https://www.genymotion.com)) and run command: (Or connect real device via USB)
 
 ```bash
 $ adb reverse tcp:8097 tcp:8097  # if you're using react-devtools
