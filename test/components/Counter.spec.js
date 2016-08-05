@@ -14,7 +14,7 @@ const props = {
   incrementAsync: sinon.spy()
 };
 
-describe('components <Counter />', function () {
+describe('components <Counter />', function spec() {
   this.timeout(5000);
 
   it('should render correctly', () => {

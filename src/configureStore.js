@@ -12,10 +12,11 @@ const middlewares = [thunk];
 let enhancer;
 let updateStore = f => f;
 if (__DEV__) {
+  /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
   const installDevTools = require('immutable-devtools');
-  installDevTools(Immutable);
-
   const devTools = global.reduxNativeDevTools || require('remote-redux-devtools');
+
+  installDevTools(Immutable);
   updateStore = devTools.updateStore || updateStore;
 
   enhancer = compose(

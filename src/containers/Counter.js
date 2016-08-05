@@ -1,9 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
-
-import Counter from '../components/Counter';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import Counter from '../components/Counter';
 import * as CounterActions from '../actions/counter';
 
 const styles = StyleSheet.create({

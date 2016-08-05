@@ -11,7 +11,8 @@
   "rules": {
     "comma-dangle": 0,
     "spaced-comment": 0,
-    "new-cap": [2, { "capIsNewExceptions": ["Map"] }]
+    "new-cap": [2, { "capIsNewExceptions": ["Map"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "plugins": ["react"]
 }
