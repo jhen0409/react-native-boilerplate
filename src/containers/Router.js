@@ -11,7 +11,7 @@ const { CardStack } = NavigationExperimental;
   state => state,
   dispatch => ({ dispatch })
 )
-export default class Root extends Component {
+export default class Router extends Component {
   static propTypes = {
     routes: PropTypes.object.isRequired,
     dispatch: PropTypes.func.isRequired
