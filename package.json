@@ -50,8 +50,8 @@
     "react-dom": "~15.2.1",
     "react-native-debugger-open": "^0.3.0",
     "react-native-mock": "^0.2.3",
-    "remote-redux-devtools": "^0.3.4",
-    "remote-redux-devtools-on-debugger": "^0.5.1",
+    "remote-redux-devtools": "^0.4.1",
+    "remote-redux-devtools-on-debugger": "^0.6.0",
     "sinon": "^1.17.2"
   }
 }
