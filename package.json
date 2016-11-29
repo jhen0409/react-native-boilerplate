@@ -1,6 +1,6 @@
 {
   "name": "RNBoilerplate",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
