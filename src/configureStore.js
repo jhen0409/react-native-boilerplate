@@ -7,33 +7,32 @@ import thunk from 'redux-thunk';
 import reducer from './reducers';
 import * as actionCreators from './actions/counter';
 
-const middlewares = [thunk];
-
-let enhancer;
-let updateStore = f => f;
+let composeEnhancers = compose;
 if (__DEV__) {
   /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
   const installDevTools = require('immutable-devtools');
-  const devTools = global.reduxNativeDevTools || require('remote-redux-devtools');
 
   installDevTools(Immutable);
-  updateStore = devTools.updateStore || updateStore;
 
-  enhancer = compose(
-    applyMiddleware(...middlewares),
-    devTools({
-      name: Platform.OS,
-      ...require('../package.json').remotedev,
-      actionCreators,
-    })
-  );
-} else {
-  enhancer = applyMiddleware(...middlewares);
+  // Ues it if Remote debugging with RNDebugger, otherwise use remote-redux-devtools
+  /* eslint-disable no-underscore-dangle */
+  composeEnhancers = (
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ||
+    require('remote-redux-devtools').composeWithDevTools
+  )({
+    name: Platform.OS,
+    ...require('../package.json').remotedev,
+    actionCreators,
+  });
+  /* eslint-enable no-underscore-dangle */
 }
+
+const enhancer = composeEnhancers(
+  applyMiddleware(thunk),
+);
 
 export default function configureStore(initialState) {
   const store = createStore(reducer, initialState, enhancer);
-  updateStore(store);
   if (module.hot) {
     module.hot.accept(() => {
       store.replaceReducer(require('./reducers').default);
