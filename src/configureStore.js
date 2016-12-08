@@ -14,7 +14,7 @@ if (__DEV__) {
 
   installDevTools(Immutable);
 
-  // Ues it if Remote debugging with RNDebugger, otherwise use remote-redux-devtools
+  // Use it if Remote debugging with RNDebugger, otherwise use remote-redux-devtools
   /* eslint-disable no-underscore-dangle */
   composeEnhancers = (
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ||
