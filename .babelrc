@@ -1,6 +1,6 @@
 {
   "presets": ["react-native"],
-  "plugins": ["transform-decorators-legacy"],
+  "plugins": ["transform-decorators"],
   "env": {
     "development": {
       "plugins": ["transform-react-jsx-source"]
