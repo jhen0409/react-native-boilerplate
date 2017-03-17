@@ -29,10 +29,9 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "babel-plugin-transform-decorators": "^6.22.0",
     "babel-plugin-transform-remove-console": "^6.8.1",
     "babel-polyfill": "^6.5.0",
-    "babel-preset-react-native": "^1.4.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
     "chai": "^3.5.0",
     "enzyme": "^2.0.0",
     "eslint": "^3.2.2",
