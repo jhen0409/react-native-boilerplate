@@ -10,11 +10,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F5FCFF'
   },
   back: {
     margin: 10,
-    fontSize: 20,
+    fontSize: 20
   }
 });
 
@@ -26,13 +26,12 @@ const styles = StyleSheet.create({
 )
 export default class CounterContainer extends Component {
   static propTypes = {
-    navigate: PropTypes.func.isRequired
+    navigation: PropTypes.object.isRequired
   };
 
   handleBack = () => {
-    const { navigate } = this.props;
-    navigate({ type: 'pop' });
-  }
+    this.props.navigation.goBack();
+  };
 
   render() {
     return (
