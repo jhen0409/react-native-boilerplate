@@ -1,10 +1,7 @@
 {
-  "presets": ["react-native-stage-0/decorator-support"],
-  "plugins": [],
+  "presets": ["react-native"],
+  "plugins": ["transform-decorators-legacy"],
   "env": {
-    "development": {
-      "plugins": ["transform-react-jsx-source"]
-    },
     "production": {
       "plugins": ["transform-remove-console"]
     }
