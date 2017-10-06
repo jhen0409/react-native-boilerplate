@@ -6,14 +6,14 @@ import Counter from './containers/Counter';
 const AppNavigator = new StackNavigator(
   {
     Home: { screen: Home },
-    Counter: { screen: Counter }
+    Counter: { screen: Counter },
   },
   {
     headerMode: 'screen',
     navigationOptions: {
-      header: null
-    }
-  }
+      header: null,
+    },
+  },
 );
 
 export default AppNavigator;
