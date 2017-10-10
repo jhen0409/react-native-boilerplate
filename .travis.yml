@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - "5"
+  - "stable"
 cache:
   directories:
     - node_modules
