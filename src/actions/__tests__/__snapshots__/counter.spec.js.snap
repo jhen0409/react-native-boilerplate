@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions decrement should create decrement action 1`] = `
+Object {
+  "type": "decrement",
+}
+`;
+
+exports[`actions increment should create increment action 1`] = `
+Object {
+  "type": "increment",
+}
+`;
