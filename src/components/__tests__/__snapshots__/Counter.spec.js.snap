@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
     }
   >
     Clicked: 
-    0
+    1
      times
   </Text>
   <View
