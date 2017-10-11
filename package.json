@@ -7,12 +7,10 @@
     "ios-open": "open ios/*.xcodeproj",
     "ios": "react-native run-ios",
     "android": "react-native run-android",
-    "link": "react-native link",
     "lint": "eslint src test *.js",
-    "test": "mocha --recursive --compilers js:babel-core/register -r test/setup",
-    "cover": "nyc npm test",
+    "test": "jest",
     "remotedev": "remotedev-debugger --injectserver",
-    "postinstall": "npm run link && npm run remotedev && rndebugger-open"
+    "postinstall": "npm run remotedev && rndebugger-open"
   },
   "remotedev": {
     "hostname": "localhost",
@@ -21,37 +19,36 @@
   "dependencies": {
     "immutable": "^3.7.6",
     "lodash": "^4.3.0",
-    "react": "~15.4.1",
-    "react-native": "^0.42.0",
-    "react-navigation": "^1.0.0-beta.9",
+    "prop-types": "^15.6.0",
+    "react": "16.0.0",
+    "react-native": "^0.49.3",
+    "react-navigation": "^1.0.0-beta.13",
     "react-redux": "^5.0.3",
     "redux": "^3.3.1",
     "redux-thunk": "^2.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-remove-console": "^6.8.1",
-    "babel-polyfill": "^6.5.0",
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "chai": "^3.5.0",
-    "enzyme": "^2.0.0",
-    "eslint": "^3.2.2",
-    "eslint-config-airbnb": "^10.0.0",
-    "eslint-plugin-import": "^1.12.0",
-    "eslint-plugin-jsx-a11y": "^2.0.1",
-    "eslint-plugin-react": "^6.0.0",
-    "immutable-devtools": "0.0.7",
-    "jsdom": "^9.4.1",
-    "mocha": "^3.0.1",
-    "node-fetch": "^1.3.3",
-    "nyc": "^10.1.2",
-    "proxyquire": "^1.7.4",
-    "react-addons-test-utils": "~15.4.1",
-    "react-dom": "~15.4.1",
-    "react-native-debugger-open": "^0.3.0",
-    "react-native-mock": "^0.3.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "react-native-debugger-open": "^0.3.15",
+    "react-test-renderer": "16.0.0",
     "remote-redux-devtools": "^0.5.4",
-    "remote-redux-devtools-on-debugger": "^0.7.0",
-    "sinon": "^2.0.0"
+    "remotedev-rn-debugger": "^0.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupTestFrameworkScriptFile": "<rootDir>/jest.js",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation)/"
+    ]
   }
 }

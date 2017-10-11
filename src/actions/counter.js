@@ -1,12 +1,12 @@
 export function increment() {
   return {
-    type: 'increment'
+    type: 'increment',
   };
 }
 
 export function decrement() {
   return {
-    type: 'decrement'
+    type: 'decrement',
   };
 }
 
@@ -23,7 +23,7 @@ export function incrementIfOdd() {
 }
 
 export function incrementAsync(delay = 1000) {
-  return dispatch => {
+  return (dispatch) => {
     setTimeout(() => {
       dispatch(increment());
     }, delay);

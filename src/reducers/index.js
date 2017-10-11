@@ -4,5 +4,5 @@ import nav from './nav';
 
 export default combineReducers({
   counter,
-  nav
+  nav,
 });

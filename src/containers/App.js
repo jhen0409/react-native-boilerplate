@@ -1,23 +1,24 @@
-import React, { Component, PropTypes } from 'react';
-import { BackAndroid } from 'react-native';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { BackHandler } from 'react-native';
 import { NavigationActions, addNavigationHelpers } from 'react-navigation/src/react-navigation';
 import { connect } from 'react-redux';
 import AppNavigator from '../navigator';
 
 @connect(
   state => ({
-    nav: state.nav
+    nav: state.nav,
   }),
-  dispatch => ({ dispatch })
+  dispatch => ({ dispatch }),
 )
 export default class AppWithNavigationState extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
-    nav: PropTypes.object.isRequired
+    nav: PropTypes.object.isRequired,
   };
 
   componentDidMount() {
-    this.backHandler = BackAndroid.addEventListener('backPress', () => {
+    this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
       this.props.dispatch(NavigationActions.back());
       return true;
     });

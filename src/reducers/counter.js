@@ -3,12 +3,12 @@ import Immutable from 'immutable';
 const initialState = Immutable.Map({ counter: 0 });
 
 const actionsMap = {
-  increment(state/*, action*/) {
+  increment(state /*, action*/) {
     return state.update('counter', n => n + 1);
   },
-  decrement(state/*, action*/) {
+  decrement(state /*, action*/) {
     return state.update('counter', n => n - 1);
-  }
+  },
 };
 
 export default (state = initialState, action) => {

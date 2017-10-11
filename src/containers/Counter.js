@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -10,23 +11,23 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF'
+    backgroundColor: '#F5FCFF',
   },
   back: {
     margin: 10,
-    fontSize: 20
-  }
+    fontSize: 20,
+  },
 });
 
 @connect(
   state => ({
-    counter: state.counter
+    counter: state.counter,
   }),
-  dispatch => bindActionCreators(CounterActions, dispatch)
+  dispatch => bindActionCreators(CounterActions, dispatch),
 )
 export default class CounterContainer extends Component {
   static propTypes = {
-    navigation: PropTypes.object.isRequired
+    navigation: PropTypes.object.isRequired,
   };
 
   handleBack = () => {

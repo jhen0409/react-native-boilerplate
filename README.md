@@ -2,18 +2,12 @@
 
 > The React Native, Redux boilerplate for personal usage
 
-## Screenshot
-
-![screenshot](https://cloud.githubusercontent.com/assets/3001525/15508320/901e5fe6-2201-11e6-970b-e7c496ab1b16.gif)
-
-> React Navigation, Redux Counter example and Remote Redux DevTools control
-
 ## Included
 
-* [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native) v0.42
+* [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native)
 * [React Navigation](https://github.com/react-community/react-navigation)
 * [Redux](https://github.com/reactjs/redux) & [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) & [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger)
-* [Immutable](https://github.com/facebook/immutable-js) & [Immutable DevTools](https://github.com/andrewdavey/immutable-devtools)
+* [Immutable](https://github.com/facebook/immutable-js)
 * [Babel](https://github.com/babel/babel) & Plugins: [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
 
 ## Installation
@@ -53,11 +47,9 @@ $ npm run android
 
 ## DevTools
 
-In development mode, you can install [React Native Debugger](https://github.com/jhen0409/react-native-debugger) as default debugger. if not install, it will use [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) and [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger).
+In development mode, you can install [React Native Debugger](https://github.com/jhen0409/react-native-debugger) as default debugger. if not install, it will use [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) and [RemoteDev RN Debugger](https://github.com/jhen0409/remotedev-rn-debugger).
 
 ## Test
-
-We used [react-native-mock](https://github.com/lelandrichardson/react-native-mock), and test with [Mocha](https://github.com/mochajs/mocha), [Enzyme](https://github.com/airbnb/enzyme).
 
 ```bash
 $ npm test
