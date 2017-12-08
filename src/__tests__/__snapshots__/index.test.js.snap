@@ -102,7 +102,6 @@ exports[`renders correctly 1`] = `
               <Text
                 accessible={true}
                 allowFontScaling={true}
-                disabled={false}
                 ellipsizeMode="tail"
                 style={
                   Object {
@@ -120,6 +119,7 @@ exports[`renders correctly 1`] = `
                 accessibilityTraits={undefined}
                 accessible={true}
                 collapsable={undefined}
+                hasTVPreferredFocus={undefined}
                 hitSlop={undefined}
                 isTVSelectable={true}
                 nativeID={undefined}
@@ -141,7 +141,6 @@ exports[`renders correctly 1`] = `
                 <Text
                   accessible={true}
                   allowFontScaling={true}
-                  disabled={false}
                   ellipsizeMode="tail"
                   style={
                     Object {
