@@ -40,7 +40,7 @@
     "eslint-plugin-react": "^7.4.0",
     "jest": "^22.0.0",
     "react-native-debugger-open": "^0.3.15",
-    "react-test-renderer": "16.2.0",
+    "react-test-renderer": "16.11.0",
     "remote-redux-devtools": "^0.5.4",
     "remotedev-rn-debugger": "^0.8.3"
   },
